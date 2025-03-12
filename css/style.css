@@ -1,0 +1,2185 @@
+/**
+    
+* Template Name: Potato - Personal Portfolio Template
+* Version: 2.0
+* Author: Themetrading
+* Email: themetrading@gmail.com
+* Developed By: Themetrading
+* First Release: 9 September 19
+* Author URL: www.themetrading.com
+
+**/
+
+
+/*	01. Default Css
+================================================================*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	line-height: 26px;
+	overflow-x: hidden;
+}
+@font-face {
+  font-family: sevil;
+  src: url(../fonts/sevil-lite.html);
+}
+p{
+	line-height: 28px;
+	margin-bottom:15px
+}
+a{
+	display: inline-block;
+}
+a, 
+a:hover, 
+a:focus,
+a.active{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none !important;
+	box-shadow: none !important;
+}
+.btn,
+.btn:hover,
+.btn:focus,
+button:focus{
+    box-shadow: none !important;
+    outline: none
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul li{
+	list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin: 0
+}
+h1{
+	font-size: 42px;
+	line-height: 56px;
+	font-weight: 800;
+}
+h2{
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 800;
+}
+h3{
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 800;
+}
+h4{
+	font-size: 21px;
+	line-height: 32px;
+	font-weight: 800;
+}
+h5{
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 600;
+}
+h6{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 600;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+button, select{
+	border: none
+}
+section{
+	padding: 80px 0px;
+}
+*, ::after, ::before{
+	 outline: none !important;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px #000; 
+}
+.dropdown-toggle::after{
+	display: none
+}
+.form-control{
+    border-radius: 5px !important;
+}
+.scroll{
+	overflow-x: hidden !important;
+	overflow-y: scroll;
+	max-height: 500px;
+}
+.letter-space-1{
+    letter-spacing: 1px;
+}
+.letter-space-2{
+    letter-spacing: 2px;
+}
+.z-index-1{
+	z-index: 1
+}
+.z-index-9{
+	z-index: 9
+}
+/* Scroll to top
+=======================================================*/
+#scroll{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    z-index: 999;
+}
+#scroll span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+}
+/* Default Padding
+=======================================================*/
+.p-5,
+.pt-5,
+.py-5{
+  padding-top: 5px !important;
+}
+.p-5,
+.pb-5,
+.py-5{
+  padding-bottom: 5px !important;
+}
+.p-5,
+.pl-5,
+.px-5{
+  padding-left: 5px !important;
+}
+.p-5,
+.pr-5,
+.px-5{
+  padding-right: 5px !important;
+}
+.p-10,
+.pt-10,
+.py-10{
+  padding-top: 10px
+}
+.p-10,
+.pb-10,
+.py-10{
+  padding-bottom: 10px;
+}
+.p-10,
+.pl-10,
+.px-10{
+  padding-left: 10px;
+}
+.p-10,
+.pr-10,
+.px-10{
+  padding-right: 10px;
+}
+.p-15,
+.pt-15,
+.py-15{
+  padding-top: 15px
+}
+.p-15,
+.pb-15,
+.py-15{
+  padding-bottom: 15px;
+}
+.p-15,
+.pl-15,
+.px-15{
+  padding-left: 15px;
+}
+.p-15,
+.pr-15,
+.px-15{
+  padding-right: 15px;
+}
+.p-20,
+.pt-20,
+.py-20{
+  padding-top: 20px
+}
+.p-20,
+.pb-20,
+.py-20{
+  padding-bottom: 20px;
+}
+.p-20,
+.pl-20,
+.px-20{
+  padding-left: 20px;
+}
+.p-20,
+.pr-20,
+.px-20{
+  padding-right: 20px;
+}
+.p-30,
+.pl-30,
+.px-30{
+	padding-left: 30px
+}
+.p-30,
+.pr-30,
+.px-30{
+	padding-right: 30px
+}
+.p-30,
+.pt-30,
+.py-30{
+	padding-top: 30px
+}
+.p-30,
+.pb-30,
+.py-30{
+	padding-bottom: 30px
+}
+.p-50,
+.pl-50,
+.px-50{
+	padding-left: 50px
+}
+.p-50,
+.pr-50,
+.px-50{
+	padding-right: 50px
+}
+.p-50,
+.pt-50,
+.py-50{
+	padding-top: 50px
+}
+.p-50,
+.pb-50,
+.py-50{
+	padding-bottom: 50px
+}
+.p-60,
+.pl-60,
+.px-60{
+	padding-left: 60px
+}
+.p-60,
+.pr-60,
+.px-60{
+	padding-right: 60px
+}
+.p-60,
+.pt-60,
+.py-60{
+	padding-top: 60px
+}
+.p-60,
+.pb-60,
+.py-60{
+	padding-bottom: 60px
+}
+.pt-80,
+.py-80{
+	padding-top: 80px
+}
+.pb-80,
+.py-80{
+	padding-bottom: 80px
+}
+/* Default Margin
+=======================================================*/
+.m-5,
+.mt-5,
+.my-5{
+  margin-top: 5px !important;
+}
+.m-5,
+.mb-5,
+.my-5{
+  margin-bottom: 5px !important;
+}
+.m-5,
+.ml-5,
+.mx-5{
+  margin-left: 5px !important;
+}
+.m-5,
+.mr-5,
+.mx-5{
+  margin-right: 5px !important;
+}
+.m-10,
+.mt-10,
+.my-10{
+  margin-top: 10px
+}
+.m-10,
+.mb-10,
+.my-10{
+  margin-bottom: 10px;
+}
+.m-10,
+.ml-10,
+.mx-10{
+  margin-left: 10px;
+}
+.m-10,
+.mr-10,
+.mx-10{
+  margin-right: 10px;
+}
+.m-15,
+.mt-15,
+.my-15{
+  margin-top: 15px
+}
+.m-15,
+.mb-15,
+.my-15{
+  margin-bottom: 15px;
+}
+.m-15,
+.ml-15,
+.mx-15{
+  margin-left: 15px;
+}
+.m-15,
+.mr-15,
+.mx-15{
+  margin-right: 15px;
+}
+.m-20,
+.mt-20,
+.my-20{
+  margin-top: 20px
+}
+.m-20,
+.mb-20,
+.my-20{
+  margin-bottom: 20px;
+}
+.m-20,
+.ml-20,
+.mx-20{
+  margin-left: 20px;
+}
+.m-20,
+.mr-20,
+.mx-20{
+  margin-right: 20px;
+}
+.m-30,
+.ml-30,
+.mx-30{
+  margin-left: 30px
+}
+.m-30,
+.mr-30,
+.mx-30{
+  margin-right: 30px
+}
+.m-30,
+.mt-30,
+.my-30{
+  margin-top: 30px
+}
+.m-30,
+.mb-30,
+.my-30{
+  margin-bottom: 30px
+}
+.m-40,
+.ml-40,
+.mx-40{
+  margin-left: 40px
+}
+.m-40,
+.mr-40,
+.mx-40{
+  margin-right: 40px
+}
+.m-40,
+.mt-40,
+.my-40{
+  margin-top: 40px
+}
+.m-40,
+.mb-40,
+.my-40{
+  margin-bottom: 40px
+}
+.m-50,
+.ml-50,
+.mx-50{
+  margin-left: 50px
+}
+.m-50,
+.mr-50,
+.mx-50{
+  margin-right: 50px
+}
+.m-50,
+.mt-50,
+.my-50{
+  margin-top: 50px
+}
+.m-50,
+.mb-50,
+.my-50{
+  margin-bottom: 50px
+}
+.m-60,
+.ml-60,
+.mx-60{
+  margin-left: 60px
+}
+.m-60,
+.mr-60,
+.mx-60{
+  margin-right: 60px
+}
+.m-60,
+.mt-60,
+.my-60{
+  margin-top: 60px
+}
+.m-60,
+.mb-60,
+.my-60{
+  margin-bottom: 60px
+}
+/* Flaticon font size
+=======================================================*/
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before{
+	margin-left: 0px !important;
+	line-height: 1
+}
+.icon-font-32 i,
+.icon-font-32 i:before{
+    font-size: 32px
+}
+.icon-font-40 i,
+.icon-font-40 i:before{
+    font-size: 40px
+}
+.icon-font-45 i,
+.icon-font-45 i:before {
+	font-size: 45px
+}
+.icon-font-60 i,
+.icon-font-60 i:before {
+	font-size: 60px
+}
+/* Some common classes
+=======================================================*/
+.radius-30, .form-radius-30 .form-control{
+	border-radius: 30px !important
+}
+.radius-round {
+	border-radius: 50%
+}
+.no-radius{
+	border-radius: 0px !important;
+}
+.shadow{
+	box-shadow: 1px 2px 5px rgba(0,0,0,.10) !important;
+}
+.owl-nav-none .owl-nav{
+	display: none
+}
+.before-none:before{
+	display: none
+}
+/*	Special Position Css 
+------------------------*/
+.xy-middle{
+	position: absolute;
+	left: 50% !important;
+	top: 50% !important
+}
+.y-middle{
+	position: absolute;
+	top: 50%
+}
+.x-middle{
+	position: absolute;
+	left: 50%
+}
+.top-0{
+	top: 0
+}
+.left{
+	left: 0
+}
+.bottom{
+	bottom: 0
+}
+.right{
+	right: 0
+}
+/*	Gradient color CSS
+=======================================================*/
+.bg-gradient-hover{
+	position: relative
+}
+.bg-gradient-hover:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	right:0;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	width: 100%;
+	border-radius: 30px
+}
+.bg-gradient-hover:hover:before{
+	opacity: 1
+}
+/*	Buttons CSS
+=======================================================*/
+.btn{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	padding: 10px 30px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	border: 2px solid transparent;
+	border-radius: 0
+}
+/*	Form Style CSS
+=======================================================*/
+.form-control{
+	padding: 0px 15px;
+	height: 44px;
+	line-height: 44px
+}
+.form-control:focus{
+	border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
+}
+.form-check-inline{
+	margin: 5px 0px;
+}
+textarea.form-control{
+	padding: 0px 10px;
+}
+.form-control:focus{
+    background-color: transparent !important;
+}
+.form-no-border .form-control{
+	border-color: transparent
+}
+/*	Section Title CSS
+=======================================================*/
+.section-title{
+	width: 48%
+}
+.inner-top-title{
+	font-weight: 500
+}
+.border_line:before {
+    left: 0;
+}
+.border_line:after {
+    right: 0;
+}
+.border_line:before, .border_line:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    top: 50%;
+}
+/*  06. Homepage Two Title CSS
+================================================================*/
+.section-title .title-top{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 500;
+    display: table;
+}
+.section-title .title-top:before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 1px;
+    top: 18px;
+    right: -50px;
+}
+.side-title{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    position: absolute;
+    left: 7px;
+    top: 0;
+	font-size: 45px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    transform: rotate(-180deg);
+    margin: 0
+}
+/*	03. Homepage Three Title CSS
+================================================================*/
+.main-title{
+	padding-left: 50px
+}
+.main-title .small-title{
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	display: table
+}
+.main-title .small-title:before{
+	position: absolute;
+	content: "";
+	width: 40px;
+	height: 2px;
+	top: 10px;
+	left: -50px
+}
+/*	03. Homepage Four Title CSS
+================================================================*/
+.main-title.two{
+	padding-left: 0px
+}
+.main-title.two .small-title:before{
+	right: -40px;
+    left: auto;
+    bottom: 7px;
+    top: auto;
+    height: 1px
+}
+/* 03.	Background Image
+===========================================*/
+.banner-image{
+	background: url(../images/banner/banner.jpg) no-repeat center center / cover;
+}
+.bg-image-dot{
+    background-image: url(../images/background/dot.png);
+}
+.bg-image-2{
+    background: url(../images/background/2.jpg) no-repeat top right / 75%
+}
+.bg-image-3{
+    background: url(../images/banner/2.jpg) no-repeat #191a1c center / cover;
+}
+/* 04.  Overlay
+===========================================*/
+[class*="overlay-"]{
+    position: relative;
+}
+[class*="overlay-"]:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	z-index: -1
+}
+
+/* Homepage Two Main Container Css
+================================================================*/
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+#main-container{
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#main-container.active{
+    width: 100%;
+}
+#main-container.active .btn-fixed{
+    margin-left: 0
+}
+/* 04. Homepage One Navigation css
+===========================================*/
+.navbar-brand img{
+	width: 150px;
+	margin: 7px 0 6px
+}
+.nav-on-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.nav-on-top {
+    animation-fill-mode: both;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    position: fixed;
+}
+.navbar-light .navbar-nav .nav-link {
+	font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 5px 12px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.navbar-light .navbar-nav .nav-link:after {
+	position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    right: 0;
+    bottom: 0;
+    border: 2px solid;
+    opacity: 0;
+}
+.navbar-light .navbar-nav .nav-link:before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 0;
+    border: 2px solid;
+    opacity: 0;
+}
+.navbar-light .navbar-nav .nav-link:hover:before,
+.navbar-light .navbar-nav .nav-link:hover:after,
+.navbar-light .navbar-nav .nav-link.active:before,
+.navbar-light .navbar-nav .nav-link.active:after{
+    opacity: 1;
+}
+.navbar-light .navbar-nav .nav-link:hover:before,
+.navbar-light .navbar-nav .nav-link:hover:after{
+	width: 50%;
+	height: 50%
+}
+@keyframes menu_sticky {
+0% {
+ margin-top: -100px;
+}
+50% {
+ margin-top: -90px;
+}
+100% {
+ margin-top: 0;
+}
+}
+@keyframes menu_sticky {
+0% {
+ margin-top: -100px;
+}
+50% {
+ margin-top: -90px;
+}
+100% {
+ margin-top: 0;
+}
+}
+#header.nav-scroll {
+	animation-duration: 1s;
+	animation-name: menu_sticky;
+	animation-timing-function: ease-out;
+	margin: 0;
+	position: fixed;
+	top: 0;
+}
+/* 07. Homepage Two Sidebar Css
+================================================================*/
+#top-nav {
+    height: 65px;
+	padding: 5px 0
+}
+#sidebar{
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+}
+.btn-fixed {
+    position: fixed;
+    top: 0;
+    margin-left: -50px;
+    z-index: 999;
+}
+.sidebar-header{
+    border-bottom: 1px solid transparent;
+}
+#sidebar.active{
+    margin-left: -250px;
+}
+#sidebar .sidebar-header{
+    padding: 50px;
+}
+#sidebar ul li a{
+    padding: 10px 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: block;
+}
+#sidebarCollapse {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+	padding: 0 10px
+}
+
+#sidebarCollapse span{
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.5s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+    transition-delay: 0.2s;
+}
+#sidebarCollapse.sidebar-1 span:first-of-type {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse.sidebar-1 span:nth-of-type(2) {
+    opacity: 0;
+}
+#sidebarCollapse.sidebar-1 span:last-of-type {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+#main-container.active #sidebarCollapse span{
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+/*	05.  Sidebar-navigation
+================================================================*/
+#sidebar.sidebar-2{
+    min-width: 200px;
+    max-width: 200px;
+    height: 100vh;
+	margin-top: 60px;
+    margin-left: -250px;
+	z-index: 99;
+}
+#sidebar.sidebar-2.active{
+	margin-left: 0px;
+	transform: none;
+}
+#sidebarCollapse.side-btn-2 span{
+	margin: 5px auto
+}
+#sidebarCollapse.side-btn-2.active span:first-of-type {
+    transform: rotate(35deg) translate(5px, 6px);
+}
+#sidebarCollapse.side-btn-2.active span:nth-of-type(2) {
+    opacity: 0
+}
+#sidebarCollapse.side-btn-2.active span:last-of-type {
+    transform: rotate(-35deg) translate(3px, -5px);
+}
+#sidebarCollapse.side-btn-2 span:nth-of-type(2) {
+    opacity: 1;
+}
+/*	04. Homepage Three Header CSS
+================================================================*/
+.navbar-brand {
+	margin: 0;
+	padding: 0
+}
+.share-tab{
+	line-height: 60px;
+	font-size: 20px;
+	display: block;
+	cursor: pointer
+}
+.share-item{
+	position: absolute;
+	display: none;
+	width: 50px;
+	right: 15px;
+	z-index: 1
+}
+.share-item li a{
+    padding: 8px 15px;
+    border-bottom: 1px solid transparent;
+    display: block;
+	font-size: 16px
+}
+.share-item li:last-child a{
+	border-bottom: none
+}
+/* 04. Homepage One Main Banner css
+===========================================*/
+.main-banner{
+	height: 100vh;
+	width: 100%
+}
+.banner-content p {
+    width: 70%;
+    font-size: 20px;
+    line-height: 32px;
+}
+.banner-content .cd-words-wrapper{
+	font-family: sevil;
+	font-size: 200px;
+	-webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 5px;
+	letter-spacing: 15px
+}
+.person-image img{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 450px
+}
+/* 04.------------Slider Navigation css------------*/
+.carousel-control-next, 
+.carousel-control-prev{
+	top: auto;
+	bottom: auto;
+	width: 50px;
+	height: 50px;
+	background: #000;
+	color: #fff
+}
+/* 04.------------Slider particles-js css------------*/
+#particles-js{
+  width: 100%;
+  background-color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+#particles-js canvas{
+	position: absolute;
+	top: 0;
+	bottom: auto
+}
+#main_banner canvas{
+	z-index: 1 !important
+}
+/* 04.------------Slider Video css------------*/
+#video-container {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+/*	06.	Homepage Three Slider Section CSS
+================================================================*/
+#slider{
+	display: table-cell
+}
+#iframe_play-video{
+	margin-left: 0px !important
+}
+.carousel-item img{
+	height: 100vh;
+	width: 100%
+}
+.carousel-caption{
+    top: 45%;
+    left: 11%;
+	bottom: auto;
+    width: 600px;
+    text-align: left;
+}
+.carousel-indicators li{
+	text-indent: 0;
+	text-align: center;
+	cursor: pointer
+}
+/* .carousel-indicators{
+	top: 45%;
+	left: auto;
+	right: -2.5%;
+	bottom: auto;
+	display: inherit
+} */
+.carousel-indicators {
+    top: 45%;
+    left: auto;
+    right: 15px;
+    bottom: auto;
+    display: inherit;
+    margin-right: 0;
+}
+.carousel-indicators li{
+	position: relative;
+	width: 0 !important;
+	height: 0 !important;
+	background: transparent;
+	margin-bottom: 10px;
+	opacity: 1
+}
+.carousel-indicators li:before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 2px;
+    left: -20px;
+    top: 13px;
+}
+/* Homepage Four Main Banner Css
+===============================================================*/
+.own-image img{
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: table;
+  border: 4px solid transparent;
+}
+.cd-words-wrapper{
+    letter-spacing: 2px;
+}
+.cd-words-wrapper b{
+    font-weight: 700 !important;
+}
+.home-4 .mainbanner-content {
+    width: 33%;
+    display: table;
+    margin: 30px auto
+}
+/* 04. Homepage One About css
+===========================================*/
+.about-details ul li {
+    padding: 5px 0px;
+    border-bottom: 1px solid;
+}
+.about-details-2 ul li span {
+    width: 80px;
+    display: inline-block;
+}
+[class*="about-img-"] img{
+	position: absolute;
+	width: 362px;
+	border: 12px solid #fff;
+	z-index: 1
+}
+.about-img-1 img{
+	top: 70px
+}
+.about-img-2 img{
+	width: 400px;
+	right: 100px;
+	border: none;
+	z-index: 0
+}
+.about-img-3 img{
+	left: 12px;
+	top: 540px;
+	border: none;
+	z-index: 0
+}
+.about-img-4 img{
+	right: 0px;
+	top: 165px
+}
+.experience{
+	width: 160px;
+    height: 160px;
+	border: 10px solid transparent;
+    border-radius: 50%;
+    padding: 42px 0;
+    font-weight: 700;
+    font-size: 18px
+}
+.experience b{
+	font-size: 30px
+}
+/* 04. Homepage Two About css
+===========================================*/
+.about-details-2 li {
+    width: 50%;
+    float: left;
+}
+/*  09. Homepage Two Qualifications
+================================================================*/
+.about-img img{
+    border: 7px solid transparent;
+
+}
+.qualification td{
+    padding: 8px 15px;
+    border-bottom: 1px solid transparent;
+}
+.qualification i{
+    font-size: 13px;
+    font-weight: 400;
+}
+/*  09. Homepage Two Skills
+================================================================*/
+.prgs-bar.fact-counter{
+    position: relative
+}
+.skill-progress .prgs-bar span{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.skill-progress .progress {
+  margin: 5px 0 30px;
+  height: 12px;
+  overflow: visible;
+  border-radius: 0px;
+  font-size: 14px;
+}
+.skill-percent {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0
+}
+.skill-percent {
+  font-weight: bold
+}
+.progress-bar{
+  width: 0
+}
+/* 09. Homepage One Service
+================================================*/
+.icon-animation{
+    position: relative;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    font-size: 50px;
+    background: transparent;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: auto;
+}
+.service-item .icon-animation .dot-round{
+    width: 100%;
+    height: 100%;
+    left: 56%;
+    top: 8%;
+}
+.dots{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 15px;
+    top: 0;
+    position: relative;
+}
+/*  10.  Homepage Two Services Section
+================================================================*/
+.service-item, .service-item-2{
+    position: relative;
+    left: 0;
+    cursor: pointer;
+}
+.service-item:hover,
+.service-item-2:hover{
+    margin-top: 15px !important;
+}
+.service-item-2 i:before{
+    line-height: 60px
+}
+.service-item-2 i{
+    width: 60px;
+    height: 60px;
+    display: block;
+    float: left;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+.service-item-2 span:after{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    right: -5px;
+    top: 5px;
+}
+/* 10. Homepage One Why Choose Me
+========================================*/
+.choose-img img{
+	width: 90%
+}
+
+/* 10. Homepage One Achivement
+========================================*/
+.achivement{
+    padding: 10px;
+    border-radius: 50px;
+}
+.round{
+	width: 65px;
+    height: 65px;
+    float: left;
+    margin-right: 30px;
+    border-radius: 100%;
+    font-size: 18px;
+    font-weight: 700
+}
+.achivement .inner-title{
+    line-height: 65px;
+    margin-bottom: 0px; 
+    letter-spacing: 1px;
+}
+/* 10. Homepage Two Achivement
+========================================*/
+.achivement .count-num {
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 700;
+}
+/* 11. Homepage One Portfolio Section
+=======================================*/
+figure {
+    margin: 0;
+}
+.controls .control{
+	padding: 7px 30px;
+    cursor: pointer;
+    font-weight: 500;
+    display: table;
+    float: left;
+    margin: 0 5px 0 0;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    border: 2px solid;
+    font-family: 'Montserrat', sans-serif;
+}
+.project{
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+	width: 100%
+}
+.project a{
+	width: 100%
+}
+.project figure:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.project figcaption{
+    bottom: 0;
+    left: 0;
+    margin: 40px 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.project-title{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    line-height: 28px;
+}
+.project-category{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    letter-spacing: 7px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0 0;
+}
+.project-zoom{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: -72px;
+    opacity: 0;
+    overflow: hidden;
+}
+.project-zoom:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: FontAwesome;
+    font-size: 40px;
+}
+.project figure:hover .project-title{
+    opacity: 0;
+    top: 30px;
+}
+.project figure:hover .project-category{
+    letter-spacing: 32px;
+    opacity: 0;
+}
+.project figure:hover .project-zoom{
+    opacity: 1;
+}
+.project figure:hover:after{
+    opacity: 0;
+}
+\/* 2 Columns */
+
+.mix,
+.gap {
+    width: calc(100%/2 - (((0 - 0) * 1rem) / 2));
+}
+
+/* 2 Columns */
+
+@media screen and (min-width: 541px) {
+    .mix,
+    .gap {
+        width: calc(100%/2 - (((0 - 0) * 1rem) / 3));
+    }
+}
+
+/* 4 Columns */
+
+@media screen and (min-width: 961px) {
+    .mix,
+    .gap {
+        width: calc(100%/4 - (((0 - 0) * 1rem) / 4));
+    }
+}
+
+/* 4 Columns */
+
+@media screen and (min-width: 1281px) {
+    .mix,
+    .gap {
+        width: calc(100%/4 - (((0 - 0) * 1rem) / 5));
+    }
+}
+/*  12. Homepage Two Portfolio Css
+================================================================*/
+.controls.style-2 .control{
+	padding: 7px 15px;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+	display: inherit;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	float: inherit
+} 
+.btn-filter, .btn-filter span {
+    position: fixed;
+    bottom: 53px;
+    right: 3px;
+    z-index: 9;
+}
+.btn-filter span {
+    width: 143px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-filter .controls{
+  display:none;
+  margin-bottom: 40px
+}
+/*  12. Homepage Two Pricing Plan Css
+================================================================*/
+.price-plan{
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.plan-header:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-image: url(../images/others/3.png);
+    background-size: 100% 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.price{
+    margin: 0;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 56px;
+}
+.price span{
+    padding: 0 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.plan-list li{
+    font-size: 16px;
+    line-height: 36px;
+}
+.plan-title{
+    letter-spacing: 2px;
+    font-weight: 700;
+	font-size: 24px
+}
+.disable{
+    color: #a5a5a5;
+    text-decoration: line-through;
+}
+/* 12. Homepage One Testimonial
+==========================================*/
+#testimonial:before{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 50%;
+	background: #fff
+	
+}
+.client-info img{
+    width: 100px !important;
+    height: 100px;
+    border-radius: 100%;
+    float: left;
+    border: 5px solid;
+}
+.client-info .client-name{
+    margin-bottom: 0px;
+}
+.owl-nav{
+    position: absolute;
+    bottom: 35px;
+    right: 15px;
+}
+.owl-nav button{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 100%;
+}
+.owl-nav button i{
+    font-size: 18px;
+    line-height: 40px;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    margin-right: 10px;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 15px
+}
+.owl-dot{
+    width: 15px;
+    height: 3px;
+    margin: 0 3px
+}
+/* 13. Homepage Two Testimonial
+==================================================*/
+.owl-wrapper{
+    width: 100%;
+    max-width: 730px;
+    margin: 0px auto;
+    height: auto;
+    clear: both;
+    text-align: center;
+    cursor: e-resize;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.review p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.review i:before{
+    font-size: 46px;
+    line-height: 58px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.owl-nav {
+    margin-top: 50px;
+}
+.owl-nav button{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 100%;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    margin-right: 10px;
+}
+/* 13. Homepage One Video Popup 
+==========================================*/
+.personal-video{
+    position: absolute;
+    top: 50%;
+    right: 20%
+}
+.personal-video a{
+    width: 80px;
+    height: 80px;
+    line-height: 90px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 222;
+    display: inherit;
+    position: relative;
+	margin: 0 auto
+}
+.personal-video .video-popup i:before{
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 8px;
+}
+.personal-video .loader{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 11;
+}
+.YouTubePopUp-Wrap {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999
+}
+.YouTubePopUp-Content {
+  background: rgba(0, 0, 0, 0) url("../images/fancybox/fancybox_loading.html") no-repeat scroll center center;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 680px;
+  position: relative
+}
+.YouTubePopUp-Content iframe {
+  border: medium none;
+  bottom: 0;
+  display: block;
+  height: 480px;
+  margin: auto 0;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+/* 14. Homepage One Blog
+=========================================*/
+.blog-item,
+.blog-thum{
+    border-bottom: 3px solid;
+}
+.blog-item .text-area{
+    border-bottom: 1px solid;
+}
+.tag a, 
+.client i,
+.date-comment{
+	font-size: 16px;
+    line-height: 26px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+}
+/* 16. Homepage One Contact info
+==========================================*/
+.socal-media{
+    margin-top: 12px;
+}
+.contact-info span{
+    font-weight: 600;
+}
+.socal-media ul li{
+    float: left;
+    margin-right: 5px;
+}
+.socal-media ul li:last-child{
+    margin-right: 0px;
+}
+.socal-media ul li a{
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 44px;
+    display: block;
+    border: 2px solid;
+    border-radius: 50%;
+}
+.error-handel{
+  position: relative;
+}
+.error-handel:before{
+  bottom: -30px;
+  display: table;
+  height: 35px;
+  left: 15px;
+  margin: auto 0;
+  position: absolute;
+  text-align: left;
+  width: 100%
+}
+.contact-message label.error{
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+#success, #error {
+  display: none;
+  line-height: 34px
+}
+#success {
+  color: #31bb15
+}
+.contact-image img{
+	-webkit-clip-path: polygon(0% 15%, 15% 0%, 85% 0%, 87% 11%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 12% 87%, 0% 85%);
+	clip-path: polygon(0% 15%, 15% 0%, 85% 0%, 87% 11%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 12% 87%, 0% 85%);
+}
+/*  14. Homepage Two Contact
+================================================================*/
+.contact-info ul li i{
+    float: left;
+}
+.contact-info h6{
+    line-height: 24px;
+    margin-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 18px
+}
+.contact-info ul li{
+    margin-bottom: 15px;
+    display: flex;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+/* 17.  Copyright
+==========================================*/
+.Copyright a{
+	font-family: 'Open Sans', sans-serif
+}
+/* 17.  Blog Details
+==========================================*/
+.banner {
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
+.breadcrumb {
+    background-color: transparent;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+}
+.breadcrumb li {
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+    padding: 0px 5px;
+    font-weight: 500;
+}
+.blockquote {
+    font-size: 22px;
+    line-height: 32px;
+}
+.text-area .tag {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 3px 0px;
+}
+.comment-avater {
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 100%;
+    border: 5px solid #f0f0f0;
+}
+.comment {
+    border-bottom: 1px solid #f0f0f0;
+}
+.btn-link {
+    font-style: italic;
+}
+
+/* 04.  Default Animation css starts from here
+=======================================================================================*/
+a,
+.btn,
+button,
+.navbar-light .navbar-nav .nav-link:after, 
+.navbar-light .navbar-nav .nav-link:before,
+.project-title, .project-category,
+.service-item, .service-item-2,
+.blog-item, .blog-thum{
+	transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out
+}
+#sidebar{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.progress-bar{
+    -webkit-transition: all 3000ms ease 0s;
+    -moz-transition: all 3000ms ease 0s;
+    -ms-transition: all 3000ms ease 0s;
+    -o-transition: all 3000ms ease 0s;
+    transition: all 3000ms ease 0s;
+}
+.y-middle, .personal-video,
+.carousel-caption{
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.x-middle, .person-image img{
+	-webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.xy-middle, .about-image:before{
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+/* Icon Animation Round 
+========================================*/
+.service-item .icon-animation .dot-round:nth-child(1) {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-animation: dot-round_1 2s infinite linear;
+  -moz-animation: dot-round_1 2s infinite linear;
+  -o-animation: dot-round_1 2s infinite linear;
+  animation: dot-round_1 2s infinite linear;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.service-item:hover .dot-round:nth-child(1) {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+@-webkit-keyframes dot-round_1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-moz-keyframes dot-round_1 {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-o-keyframes dot-round_1 {
+  0% {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes dot-round_1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes dot-round_2 {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(540deg);
+    transform: rotate(540deg); } }
+
+@-moz-keyframes dot-round_2 {
+  0% {
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  100% {
+    -moz-transform: rotate(540deg);
+    transform: rotate(540deg); } }
+
+@-o-keyframes dot-round_2 {
+  0% {
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  100% {
+    -o-transform: rotate(540deg);
+    transform: rotate(540deg); } }
+
+@keyframes dot-round_2 {
+  0% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(540deg);
+    -moz-transform: rotate(540deg);
+    -o-transform: rotate(540deg);
+    transform: rotate(540deg); }
+}
+/*  Gallery Animation
+-------------------------------------*/
+.project-title,
+.project:hover figure,
+.project-category{
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.project figure:after,
+.project-zoom{
+    -moz-transition: all 0.7s ease 0s;
+    -webkit-transition: all 0.7s ease 0s;
+    -ms-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+.project img{
+    -moz-transition: all 8s linear 0s;
+    -webkit-transition: all 8s linear 0s;
+    -ms-transition: all 8s linear 0s;
+    -o-transition: all 8s linear 0s;
+    transition: all 8s linear 0s;
+}
+.project figure:hover .project-zoom{
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.project:hover img{
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    transform: scale(1.4);
+}
+.project-zoom{
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+.project-zoom:after{
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/*  Youtube video keyframes
+===============================================*/
+
+@-webkit-keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+@keyframes ball-scale-multiple {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; } }
+
+.ball-scale-multiple {
+	position: relative 
+}
+.ball-scale-multiple > div:nth-child(2) {
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s; }
+.ball-scale-multiple > div:nth-child(3) {
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s; }
+.ball-scale-multiple > div {
+    border-radius: 100%;
+    margin: 2px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+	left: -70px;
+	top: -70px;
+    width: 140px;
+    height: 140px;
+    -webkit-animation: ball-scale-multiple 3s 0s linear infinite;
+    animation: ball-scale-multiple 3s 0s linear infinite; 
+}
+
+/* 04.  Responsive css starts from here
+=======================================================================================*/
+/* Large devices (desktops, less than 1300px) */
+@media (min-width: 1299.98px) {
+.container{
+	max-width: 1200px
+}
+}
+/* Large devices (desktops, less than 1600px) */
+@media (min-width: 1599.98px) {
+.container{
+  max-width: 1536px
+}
+}
+/* Desktop device less than 1400px */
+@media (max-width: 1399.98px) {
+  [class*="about-img-"] img {
+      width: 280px
+  }
+  .about-img-3 img {
+      top: 440px
+  }
+  .experience{
+    top: 35% !important
+  }
+  .about-img-2 img{
+    right: 45px
+  }
+  .about-img-4 img{
+    top: 140px
+  }
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 1199.98px) and (min-width: 991.98px) {
+.home-4 .mainbanner-content{
+	width:50%
+}
+.round{
+	margin-right: 15px
+}
+.achivement .inner-title{
+	font-size: 14px
+}
+.socal-media ul li a{
+	width: 36px;
+	height: 36px;
+	line-height: 34px
+}
+.person-image img{
+	width: 70%
+}
+.banner-content .cd-words-wrapper{
+	font-size: 150px;
+	-webkit-text-stroke-width: 1px
+}
+[class*="about-img-"] img {
+    width: 250px
+}
+.about-img-3 img{
+	left: 12px;
+    top: 392px
+}
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+.r-mt-30 {
+	margin-top: 30px
+}
+.nav-on-banner{
+	position: relative
+}
+.main-banner{
+	height: 600px
+}
+.navbar-nav{
+	padding: 10px 0 15px
+}
+.controls .control{
+	margin-bottom: 5px
+}
+.carousel-item img{
+	width: auto
+}
+.choose-me .w-75{
+	width: 100% !important
+}
+#testimonial:before{
+	width: 100%
+}
+.personal-video,
+.side-title,
+.about-image{
+	display: none
+}
+.mainbanner-content .banner-title{
+	font-size: 21px !important;
+	line-height: 28px
+}
+.cd-headline{
+	font-size: 14px
+}
+.banner-content .cd-words-wrapper{
+	font-size: 100px;
+	-webkit-text-stroke-width: 1px
+}
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+#main-container{
+	width: 100%
+}
+#main-container .btn-fixed{
+	margin-left: 200px
+}
+h1{
+	font-size: 32px !important;
+	line-height: 38px
+}
+h2{
+	font-size: 26px !important;
+	line-height: 34px
+}
+h3{
+	font-size: 21px !important;
+	line-height: 32px
+}
+h4{
+	font-size: 16px !important;
+	line-height: 28px
+}
+h5{
+	font-size: 14px !important;
+	line-height: 26px
+}
+.rmt-30{
+	margin-top: 30px
+}
+.home-4 .mainbanner-content{
+	width: 280px
+}
+.carousel-caption{
+	width: 90%
+}
+.carousel-caption .slider-title{
+	font-size: 28px !important
+}
+.section-title,
+.banner-content p{
+	width: 100%
+}
+.qualification td{
+	padding: 8px 0
+}
+.qualification .bg-dark{
+	background-color: transparent !important
+}
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+.navbar-light.p-0{
+	padding: 0 15px !important
+}
+.person-image img{
+	width: 85%
+}
+.banner-content .cd-words-wrapper{
+	font-size: 50px;
+	z-index: 2
+}
+}
+@media (max-width: 469.98px){
+#about .btn.mr-3 {
+    margin-bottom: 15px;
+}
+.qualification sup {
+    display: table;
+    margin-top: 15px;
+}
+}

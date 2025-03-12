@@ -1,0 +1,131 @@
+/*==== Color Setting css ====*/
+.on-panel {
+    height: 45px;
+    left: -45px;
+    position: absolute;
+    top: 0;
+    width: 45px;
+    cursor: pointer;
+}
+.color-panel {
+	position: fixed;
+	right: -225px;
+	top: 140px;
+	z-index: 999;
+	-webkit-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out
+}
+.color-panel.open {
+	right: 0
+}
+.on-panel {
+	height: 45px;
+	left: -45px;
+	position: absolute;
+	top: 0;
+	width: 45px;
+	cursor: pointer
+}
+.on-panel img {
+	padding: 10px
+}
+.panel-box, .switcher_layout,
+.box_bg_style {
+  padding: 14px 10px 14px 20px;
+  width: 225px;
+  background: #f8f8f8;
+  display: table
+}
+.panel-box .panel-title {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px
+}
+.color-box {
+	display: table;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 10px
+}
+.color-box li{
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin-right: 5px;
+	cursor: pointer
+}
+.scroll-btn{
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+	width: 35px;
+	height: 35px;
+	line-height: 33px;
+	text-align: center;
+	color: #fff;
+	z-index: 9
+}
+.color-panel {
+	background-color: #fff
+}
+.color-box li {
+	position: relative;
+	overflow: hidden;
+}
+.color-box li:before {
+	position: absolute;
+    content: "";
+    width: 100%;
+    height: 145%;
+    z-index: 9;
+    left: 10px;
+    top: 0px
+}
+.color-box li.active{
+	border: 2px solid #000
+}
+.color-box li.default {
+	background-color:#ffe500
+}
+.color-box li.default:before {
+    background: #2e303d;
+}
+.color-box li.color_2 {
+	background-color:#cbad79
+}
+.color-box li.color_2:before {
+    background: #1f222b;
+}
+.color-box li.color_3 {
+	background-color:#ed0008
+}
+.color-box li.color_3:before {
+    background: #232323;
+}
+.color-box li.color_4 {
+	background-color:#0295ff
+}
+.color-box li.color_4:before {
+    background: #040517;
+}
+.color-box li.color_5 {
+	background-color:#8bcb2f
+}
+.color-box li.color_5:before {
+    background: #22252a;
+}
+.color-box li.color_6 {
+	background-color:#ff8b1a
+}
+.color-box li.color_6:before {
+    background: #20232c;
+}
+.color-box li.color_7 {
+	background-color:#23dd92
+}
+.color-box li.color_7:before {
+    background: #060e35;
+}
